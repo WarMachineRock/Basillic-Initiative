@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="id" class="">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Basillic Initiative</title>
-      
-        <!-- ✅ Logo di tab browser -->
-        <link rel="icon" type="image/png" href="https://i.postimg.cc/XY9F74Pd/Untitled-3.png" />
-      
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-          tailwind.config = {
-            darkMode: 'class',
-          }
-        </script>
-      </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 flex items-center justify-center min-h-screen transition duration-300">
-  <div class="bg-white dark:bg-gray-800 max-w-md w-full p-6 rounded-2xl shadow-lg text-center relative">
-    
-    <!-- Tombol Dark Mode -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basillic Initiative</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+<body class="relative text-gray-800 dark:text-gray-100 flex items-center justify-center min-h-screen overflow-hidden">
+
+  <!-- 🔥 Video Background -->
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-[-1] brightness-[0.5]">
+    <source src="https://raw.githubusercontent.com/WarMachineRock/Basillic-Initiative/main/JKT.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔳 Konten Utama -->
+  <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md max-w-md w-full p-6 rounded-2xl shadow-lg text-center relative z-10">
+    <!-- Toggle Mode -->
     <button onclick="toggleDark()" class="absolute top-4 right-4 bg-gray-300 dark:bg-gray-700 px-3 py-1 text-xs rounded-full shadow hover:scale-105 transition">
       🌙 Toggle Mode
     </button>
@@ -38,7 +46,6 @@
       <a 
         href="https://shopee.co.id/basillicinitiative?entryPoint=ShopBySearch&searchKeyword=basillic"
         target="_blank"
-        onclick="trackClick()"
         class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl shadow-md transition transform hover:scale-105"
       >
         Shopee Indonesia
@@ -47,6 +54,7 @@
 
     <!-- Footer -->
     <p class="text-xs text-gray-400 dark:text-gray-500 mt-6">© 2023 Basillic Initiative</p>
+  </div>
 
   <!-- Script -->
   <script>
